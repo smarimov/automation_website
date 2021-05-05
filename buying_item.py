@@ -3,7 +3,7 @@ from selenium.webdriver import ActionChains
 
 open_website()
 
-print('Open Website')
+print('Open Website..')
 def ordering_t_shirt():
     women_menu = driver.find_element_by_link_text("Women")
 
