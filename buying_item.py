@@ -1,10 +1,17 @@
-from automationpractice_website.sign_up import *
+from selenium import webdriver
+
 from selenium.webdriver import ActionChains
+from selenium.webdriver.support.select import Select
 
-open_website()
-
+driver = webdriver.Chrome()
 print('Open Website..')
+
+driver.implicitly_wait(20)
+
+
 def ordering_t_shirt():
+    driver.get('http://automationpractice.com/index.php')
+
     women_menu = driver.find_element_by_link_text("Women")
 
     women_menu.click()
