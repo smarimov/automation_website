@@ -58,4 +58,4 @@ def ordering_t_shirt():
     driver.find_element_by_xpath('//*[@id="cart_navigation"]/button').click()
 
 
-ordering_t_shirt()
+

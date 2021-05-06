@@ -4,12 +4,11 @@ from selenium.webdriver.support.ui import Select
 driver = webdriver.Chrome(executable_path="C:\\Program Files\\Python39\\chromedriver.exe")
 
 
-def open_website():
-    driver.get('http://automationpractice.com/index.php')
-    driver.implicitly_wait(20)
+driver.implicitly_wait(20)
 
 
 def sign_in_button():
+    driver.get('http://automationpractice.com/index.php')
     # find 'sign in' element and click on it:
     sign_in = driver.find_element_by_xpath("//a[contains(text(),'Sign in')]")
     sign_in.click()
